@@ -121,19 +121,19 @@ const Footer = () => {
               <div className="space-y-6 pt-4 border-t border-white/5">
                 <h5 className="text-[#C5A572] text-xs tracking-[0.3em] uppercase mb-4">Trusted Partners</h5>
                 <div className="grid grid-cols-2 gap-4">
-                  <div className="p-4 bg-white/5 rounded-xl text-center group/partner hover:bg-[#C5A572]/10 transition-all duration-300">
+                  <div className="p-4 bg-white/5 rounded-xl text-center group/partner hover:bg-[#C5A572]/10 cursor-pointer transition-all duration-300">
                     <span className="text-white/40 text-xs font-light block mb-1">Global Leader</span>
                     <span className="text-white/80 text-sm font-medium">Goldman Sachs</span>
                   </div>
-                  <div className="p-4 bg-white/5 rounded-xl text-center group/partner hover:bg-[#C5A572]/10 transition-all duration-300">
+                  <div className="p-4 bg-white/5 rounded-xl text-center group/partner hover:bg-[#C5A572]/10 cursor-pointer transition-all duration-300">
                     <span className="text-white/40 text-xs font-light block mb-1">Strategic Partner</span>
                     <span className="text-white/80 text-sm font-medium">Deloitte</span>
                   </div>
-                  <div className="p-4 bg-white/5 rounded-xl text-center group/partner hover:bg-[#C5A572]/10 transition-all duration-300">
+                  <div className="p-4 bg-white/5 rounded-xl text-center group/partner hover:bg-[#C5A572]/10 cursor-pointer transition-all duration-300">
                     <span className="text-white/40 text-xs font-light block mb-1">Financial Partner</span>
                     <span className="text-white/80 text-sm font-medium">JPMorgan</span>
                   </div>
-                  <div className="p-4 bg-white/5 rounded-xl text-center group/partner hover:bg-[#C5A572]/10 transition-all duration-300">
+                  <div className="p-4 bg-white/5 rounded-xl text-center group/partner hover:bg-[#C5A572]/10 cursor-pointer transition-all duration-300">
                     <span className="text-white/40 text-xs font-light block mb-1">Consulting Partner</span>
                     <span className="text-white/80 text-sm font-medium">McKinsey</span>
                   </div>
@@ -321,9 +321,7 @@ const Footer = () => {
                 <span className="text-white/30 text-[8px] tracking-[0.2em] uppercase">Crafted by</span>
                 <span className="text-[#C5A572] text-xs md:text-sm font-light relative">
                   S.A.I.T Solution Nepal
-                  <span className="absolute -bottom-1 left-0 w-0 group-hover:w-full h-[1px] bg-[#C5A572] transition-all duration-500" />
                 </span>
-                <FiArrowRight className="w-3 h-3 text-[#C5A572] opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-2 group-hover:translate-x-0" />
               </Link>
             </div>
           </div>

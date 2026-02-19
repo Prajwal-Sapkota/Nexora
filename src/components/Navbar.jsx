@@ -123,7 +123,7 @@ const Navbar = () => {
                 <div className="absolute -inset-2 bg-[#C5A572]/20 rounded-full blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
 
                 <button
-                  className={`relative px-8 py-3 text-sm tracking-[0.2em] uppercase overflow-hidden transition-all duration-300 group-hover:scale-105 ${isScrolled
+                  className={`relative px-8 py-3 text-sm tracking-[0.2em] uppercase overflow-hidden cursor-pointer transition-all duration-300 group-hover:scale-105 ${isScrolled
                       ? 'bg-gradient-to-r from-[#C5A572] to-[#B8944A] text-[#1C1F2A]'
                       : 'border border-white/30 text-white hover:bg-white hover:text-[#1C1F2A]'
                     }`}

@@ -114,7 +114,7 @@ const SpecialOffers = () => {
                 key={offer.id}
                 onMouseEnter={() => setHoveredId(offer.id)}
                 onMouseLeave={() => setHoveredId(null)}
-                className={`group relative overflow-hidden rounded-3xl transition-all duration-700 transform ${offer.featured ? 'lg:scale-105 lg:-my-4' : ''
+                className={`group relative overflow-hidden rounded-3xl transition-all duration-700 transform cursor-pointer ${offer.featured ? 'lg:scale-105 lg:-my-4' : ''
                   } ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-20'
                   }`}
                 style={{
@@ -180,7 +180,7 @@ const SpecialOffers = () => {
 
                   {/* CTA Button */}
                   <Link to="/booking">
-                    <button className={`group inline-flex items-center gap-2 bg-white text-[#1C1F2A] px-6 py-2 text-xs tracking-widest uppercase rounded-full shadow-lg hover:bg-[#C5A572] hover:text-[#1C1F2A] transition-all duration-300 transform ${isHovered ? 'translate-x-2' : ''
+                    <button className={`group inline-flex items-center gap-2 bg-white text-[#1C1F2A] cursor-pointer px-6 py-2 text-xs tracking-widest uppercase rounded-full shadow-lg hover:bg-[#C5A572] hover:text-[#1C1F2A] transition-all duration-300 transform ${isHovered ? 'translate-x-2' : ''
                       }`}>
                       Get Offer
                       <FiArrowRight className={`w-3 h-3 transition-transform duration-300 ${isHovered ? 'translate-x-1' : ''

@@ -207,7 +207,7 @@ const Dining = () => {
                 </div>
 
                 <Link to={`/dining/${item.id}`}>
-                  <button className="group/btn flex items-center gap-2 md:gap-3 text-[#C5A572] tracking-widest uppercase text-xs md:text-sm hover:gap-3 md:hover:gap-5 transition-all duration-300">
+                  <button className="group/btn flex items-center cursor-pointer gap-2 md:gap-3 text-[#C5A572] tracking-widest uppercase text-xs md:text-sm hover:gap-3 md:hover:gap-5 transition-all duration-300">
                     <span className="relative overflow-hidden">
                       View Details
                       <span className="absolute bottom-0 left-0 w-full h-px bg-[#C5A572] transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-500 origin-left" />
@@ -232,7 +232,7 @@ const Dining = () => {
         }`}
       >
         <Link to="/dining">
-          <button className="bg-[#C5A572] text-[#1C1F2A] px-6 sm:px-8 md:px-12 py-3 md:py-5 text-xs md:text-sm tracking-[0.2em] uppercase inline-flex items-center gap-2 md:gap-3 hover:bg-[#B8944A] transition-all duration-300 rounded-full shadow-lg hover:shadow-xl group w-full sm:w-auto justify-center">
+          <button className="bg-[#C5A572] text-[#1C1F2A] cursor-pointer px-6 sm:px-8 md:px-12 py-3 md:py-5 text-xs md:text-sm tracking-[0.2em] uppercase inline-flex items-center gap-2 md:gap-3 hover:bg-[#B8944A] transition-all duration-300 rounded-full shadow-lg hover:shadow-xl group w-full sm:w-auto justify-center">
             <span>Reserve Your Table</span>
             <FiArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-2 transition-transform duration-300" />
           </button>

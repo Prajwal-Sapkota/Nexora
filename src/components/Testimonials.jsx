@@ -106,7 +106,7 @@ const Testimonials = () => {
           {/* Left Button - Repositioned for mobile */}
           <button
             onClick={handlePrevious}
-            className="absolute -left-2 sm:left-0 md:-left-16 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-[#C5A572]/30 bg-white/90 backdrop-blur-sm flex items-center justify-center hover:border-[#C5A572] hover:bg-[#C5A572] group transition-all duration-300 shadow-lg"
+            className="absolute -left-2 sm:left-0 md:-left-16 top-1/2 -translate-y-1/2 z-20 cursor-pointer w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-[#C5A572]/30 bg-white/90 backdrop-blur-sm flex items-center justify-center hover:border-[#C5A572] hover:bg-[#C5A572] group transition-all duration-300 shadow-lg"
             aria-label="Previous testimonial"
           >
             <FaChevronLeft className="text-[#C5A572] group-hover:text-white transition-colors duration-300 text-xs sm:text-sm md:text-base" />
@@ -115,7 +115,7 @@ const Testimonials = () => {
           {/* Right Button - Repositioned for mobile */}
           <button
             onClick={handleNext}
-            className="absolute -right-2 sm:right-0 md:-right-16 top-1/2 -translate-y-1/2 z-20 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-[#C5A572]/30 bg-white/90 backdrop-blur-sm flex items-center justify-center hover:border-[#C5A572] hover:bg-[#C5A572] group transition-all duration-300 shadow-lg"
+            className="absolute -right-2 sm:right-0 md:-right-16 top-1/2 -translate-y-1/2 z-20 cursor-pointer w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full border border-[#C5A572]/30 bg-white/90 backdrop-blur-sm flex items-center justify-center hover:border-[#C5A572] hover:bg-[#C5A572] group transition-all duration-300 shadow-lg"
             aria-label="Next testimonial"
           >
             <FaChevronRight className="text-[#C5A572] group-hover:text-white transition-colors duration-300 text-xs sm:text-sm md:text-base" />
@@ -176,7 +176,7 @@ const Testimonials = () => {
             <button
               key={index}
               onClick={() => handleDotClick(index)}
-              className={`transition-all duration-300 ${
+              className={`transition-all duration-300 cursor-pointer ${
                 index === currentIndex
                   ? "w-4 md:w-6 lg:w-8 h-1.5 md:h-2 lg:h-2.5 bg-[#C5A572] rounded-full"
                   : "w-1.5 h-1.5 md:w-2 md:h-2 lg:w-2.5 lg:h-2.5 bg-[#C5A572]/20 rounded-full hover:bg-[#C5A572]/40"

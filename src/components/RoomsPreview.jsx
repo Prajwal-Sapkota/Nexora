@@ -211,7 +211,7 @@ export default function RoomsPreview() {
                     </Link>
 
                     <Link to="/booking" className="w-full sm:w-auto">
-                      <button className="w-full sm:w-auto border border-[#C5A572] text-[#C5A572] px-4 md:px-5 py-1.5 md:py-2 text-[10px] md:text-xs tracking-widest uppercase transition-all duration-500 group-hover:bg-[#C5A572] group-hover:text-[#1C1F2A]">
+                      <button className="w-full sm:w-auto cursor-pointer border border-[#C5A572] text-[#C5A572] px-4 md:px-5 py-1.5 md:py-2 text-[10px] md:text-xs tracking-widest uppercase transition-all duration-500 group-hover:bg-[#C5A572] group-hover:text-[#1C1F2A]">
                         Book Now
                       </button>
                     </Link>
@@ -235,7 +235,7 @@ export default function RoomsPreview() {
             }`}
         >
           <Link to="/rooms">
-            <button className="group bg-[#C5A572] text-[#1C1F2A] px-8 md:px-12 py-3 md:py-5 text-xs md:text-sm tracking-[0.2em] uppercase inline-flex items-center gap-2 md:gap-3 hover:bg-[#B8944A] transition-all duration-300 w-full sm:w-auto justify-center">
+            <button className="group bg-[#C5A572] text-[#1C1F2A] cursor-pointer px-8 md:px-12 py-3 md:py-5 text-xs md:text-sm tracking-[0.2em] uppercase inline-flex items-center gap-2 md:gap-3 hover:bg-[#B8944A] transition-all duration-300 w-full sm:w-auto justify-center">
               <span>View All Corporate Suites</span>
               <FiArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-2 transition-transform duration-300" />
             </button>

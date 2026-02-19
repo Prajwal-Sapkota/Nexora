@@ -92,7 +92,7 @@ const Amenities = () => {
             <div
               key={index}
               ref={el => cardsRef.current[index] = el}
-              className={`group bg-white rounded-xl p-4 sm:p-5 md:p-6 text-center hover:shadow-xl transition-all duration-500 border border-[#C5A572]/10 hover:border-[#C5A572]/30 hover:-translate-y-1 transform ${
+              className={`group bg-white rounded-xl p-4 sm:p-5 md:p-6 cursor-pointer text-center hover:shadow-xl transition-all duration-500 border border-[#C5A572]/10 hover:border-[#C5A572]/30 hover:-translate-y-1 transform ${
                 isVisible.cards[index] ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: `${index * 100}ms` }}

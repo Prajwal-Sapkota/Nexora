@@ -236,7 +236,7 @@ const BrandStory = () => {
               }}
             >
               <Link to="/about">
-                <button className="group relative bg-[#C5A572] text-[#1C1F2A] px-6 sm:px-8 md:px-10 py-3 sm:py-4 tracking-widest text-xs sm:text-sm uppercase inline-flex items-center gap-2 sm:gap-3 overflow-hidden w-full sm:w-auto justify-center">
+                <button className="group relative bg-[#C5A572] text-[#1C1F2A] px-6 sm:px-8 md:px-10 py-3 sm:py-4 tracking-widest text-xs sm:text-sm uppercase cursor-pointer inline-flex items-center gap-2 sm:gap-3 overflow-hidden w-full sm:w-auto justify-center">
                   {/* Button Background Animation */}
                   <span className="absolute inset-0 bg-[#1C1F2A] transform translate-y-full group-hover:translate-y-0 transition-transform duration-500" />
                   

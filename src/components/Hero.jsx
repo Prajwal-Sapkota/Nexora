@@ -89,14 +89,14 @@ const Hero = () => {
           >
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link to="/rooms" className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto bg-[#C5A572] text-[#1C1F2A] px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm tracking-widest flex items-center justify-center gap-2 hover:bg-[#B8944A] transition-all duration-300 hover:scale-105">
+                <button className="w-full sm:w-auto bg-[#C5A572] text-[#1C1F2A] cursor-pointer px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm tracking-widest flex items-center justify-center gap-2 hover:bg-[#B8944A] transition-all duration-300 hover:scale-105">
                   VIEW ROOMS
                   <FiArrowRight className="group-hover:translate-x-2 transition-transform" />
                 </button>
               </Link>
 
               <Link to="/contact" className="w-full sm:w-auto">
-                <button className="w-full sm:w-auto border border-white/30 text-white px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm tracking-widest hover:bg-white hover:text-[#1C1F2A] transition-all duration-300 hover:scale-105">
+                <button className="w-full sm:w-auto border border-white/30 text-white cursor-pointer px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm tracking-widest hover:bg-white hover:text-[#1C1F2A] transition-all duration-300 hover:scale-105">
                   BOOK NOW
                 </button>
               </Link>

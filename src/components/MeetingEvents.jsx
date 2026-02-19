@@ -161,7 +161,7 @@ const MeetingsEvents = () => {
                 </div>
                 
                 <Link to={`/events/${venues[0].id}`}>
-                  <button className="border border-[#C5A572] text-[#C5A572] px-2 py-1 text-[10px] tracking-widest uppercase inline-flex items-center gap-1 hover:bg-[#C5A572] hover:text-[#1C1F2A] transition-all duration-300 group-hover:border-white group-hover:text-white">
+                  <button className="border border-[#C5A572] text-[#C5A572] cursor-pointer px-2 py-1 text-[10px] tracking-widest uppercase inline-flex items-center gap-1 hover:bg-[#C5A572] hover:text-[#1C1F2A] transition-all duration-300 group-hover:border-white group-hover:text-white">
                     View Details
                     <FiArrowRight className="w-2 h-2 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -196,7 +196,7 @@ const MeetingsEvents = () => {
                 </div>
                 
                 <Link to={`/events/${venues[1].id}`}>
-                  <button className="border border-[#C5A572] text-[#C5A572] px-2 py-1 text-[10px] tracking-widest uppercase inline-flex items-center gap-1 hover:bg-[#C5A572] hover:text-[#1C1F2A] transition-all duration-300 group-hover:border-white group-hover:text-white">
+                  <button className="border border-[#C5A572] text-[#C5A572] cursor-pointer px-2 py-1 text-[10px] tracking-widest uppercase inline-flex items-center gap-1 hover:bg-[#C5A572] hover:text-[#1C1F2A] transition-all duration-300 group-hover:border-white group-hover:text-white">
                     View Details
                     <FiArrowRight className="w-2 h-2 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -251,7 +251,7 @@ const MeetingsEvents = () => {
                 </div>
                 
                 <Link to={`/events/${venues[2].id}`}>
-                  <button className="border border-[#C5A572] text-[#C5A572] px-2 py-1 text-[10px] tracking-widest uppercase inline-flex items-center gap-1 hover:bg-[#C5A572] hover:text-[#1C1F2A] transition-all duration-300 group-hover:border-white group-hover:text-white">
+                  <button className="border border-[#C5A572] text-[#C5A572] cursor-pointer px-2 py-1 text-[10px] tracking-widest uppercase inline-flex items-center gap-1 hover:bg-[#C5A572] hover:text-[#1C1F2A] transition-all duration-300 group-hover:border-white group-hover:text-white">
                     View Details
                     <FiArrowRight className="w-2 h-2 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -264,7 +264,7 @@ const MeetingsEvents = () => {
         {/* Bottom CTA */}
         <div className="text-center mt-12">
           <Link to="/contact">
-            <button className="bg-[#C5A572] text-[#1C1F2A] px-8 py-3 text-sm tracking-widest uppercase hover:bg-[#B8944A] transition-all duration-300">
+            <button className="bg-[#C5A572] text-[#1C1F2A] cursor-pointer px-8 py-3 text-sm tracking-widest uppercase hover:bg-[#B8944A] transition-all duration-300">
               Inquire About Availability
             </button>
           </Link>

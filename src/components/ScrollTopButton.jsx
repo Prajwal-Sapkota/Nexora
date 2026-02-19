@@ -1,4 +1,3 @@
-
 import { useEffect, useLayoutEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { FaArrowUp } from "react-icons/fa";
@@ -9,16 +8,15 @@ const ScrollTopButton = () => {
 
     // Scroll to top immediately on page load & route change
     useLayoutEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "smooth" }); // instant scroll
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }, [pathname]);
 
-    // Scroll to top before reload (so refresh always starts at top)
+    // Force scroll to top on initial page load/reload
     useEffect(() => {
-        const handleBeforeUnload = () => {
+        // Small delay to ensure DOM is ready
+        setTimeout(() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-        };
-        window.addEventListener("beforeunload", handleBeforeUnload);
-        return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+        }, 10);
     }, []);
 
     // Show button when scrolled down
@@ -35,9 +33,9 @@ const ScrollTopButton = () => {
     return (
         <button
             onClick={scrollToTop}
-            className={`fixed bottom-6 right-6 z-50 p-4 rounded-full shadow-xl transition-all duration-500
-    bg-[#C5A572] text-[#1C1F2A] hover:bg-[#B8944A] hover:text-[#1C1F2A] hover:scale-110 hover:shadow-2xl
-    ${visible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-10 scale-90 pointer-events-none"}`}
+            className={`fixed bottom-6 right-6 z-50 p-4 rounded-full shadow-xl transition-all duration-500 cursor-pointer
+                bg-[#C5A572] text-[#1C1F2A] hover:bg-[#B8944A] hover:text-[#1C1F2A] hover:scale-110 hover:shadow-2xl
+                ${visible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-10 scale-90 pointer-events-none"}`}
             aria-label="Back to top"
         >
             <FaArrowUp className="text-lg group-hover:animate-bounce" />
@@ -46,4 +44,3 @@ const ScrollTopButton = () => {
 };
 
 export default ScrollTopButton;
-
